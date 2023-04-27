@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Javascript practice</title>
+</head>
+<body>
+     
+
+
+
+
+     <script>
+
+          /* 1. hello world */ 
+
+          // document.write('hello javascript');
+
+
+          /* 2. how to create a comment in js*/ 
+
+          //this is single line comment
+          /* this is multiple line comment */ 
+
+
+          /* 3. variable*/
+
+          // var a=30;
+          // var b=40;
+          // var c=a+b;
+          // document.write(c);
+
+          //variable are like the container or the pots
+
+
+
+          //javascript variable are case sensitive like a and A are different
+
+
+          /* 4.  javascript data types*/
+
+
+          //primitive data types
+
+          // number- example : 1
+          // boolean - example: true,false
+          // null
+          // string-"sufian"
+          // undefined
+
+
+          //non primitive data types
+
+          // object -example:
+
+          // var a ={
+          //      name:"faisal ahmed",
+          //      age:20,
+          //      city:"Rangpur"
+          // }
+          // console.log(a);
+          // console.log(a.city);
+
+
+          // Array -example:
+          // var x=["Dinajpur","Dhaka","Rangpur"]
+          // console.log(x[2]);
+
+
+          // regular expression
+
+
+          /* 5.  Introduction of operators*/
+
+
+          /* 6.  if, else if ,else statement */ 
+
+          // let marks=60;
+          // if(marks>=80 && marks<=100){
+          //      console.log('A+')
+          // }
+          // else if(marks>=70 && marks <=79){
+          //      console.log('A')
+          // }
+          // else if(C){
+          //      console.log('A-')
+          // }
+          // else{
+          //      console.log('Fail')
+          // }
+
+
+          /* 7. switch statement */ 
+
+          // let marks=40;
+
+          // switch(true){
+          //      case(marks>=80 && marks<=100): 
+          //         console.log('A+')
+          //      break;
+          //      case(marks>=70 && marks <=79): 
+          //         console.log('A')
+          //      break;
+          //      case(marks>=60 && marks <=69): 
+          //         console.log('A-')
+          //      break;
+          //      default: 
+          //           console.log('F')
+
+
+
+          // }
+
+          /* 8. for loops */
+
+          // let i;
+          //  for(i=0;i<=9;i=i+2){
+
+          //      document.write(i+'<button></button>'+'<br>')
+
+
+          //  }
+
+
+          /* 9. while loop*/ 
+
+          // let i=0;
+          // while(i<5){
+          //      document.write(i + '<button>while loop</button>'+'<br>')
+
+          //      i++;
+          // }
+
+
+          /* 10.  do while loop */
+
+          // let i=1;
+          // do{
+          //      document.write(i + '<button> do while loop</button>'+'<br>')
+
+          //      i++;
+
+          // }while(i<5)
+
+
+
+          /* 11. break and continue in loops */ 
+
+          //continue
+
+
+          //  let i;
+          //  for(i=0;i<=9;i=i+1){
+
+          //      if(i==5 || i==6){
+          //           continue;
+          //      }
+
+          //      document.write(i+'<button></button>'+'<br>')
+
+
+          //  }
+
+          // continue skips when the terms of condition match
+
+
+          //break
+
+           
+          //  let i;
+          //  for(i=0;i<=9;i=i+1){
+
+          //      if(i==5){
+          //           break;
+          //      }
+
+          //      document.write(i+'<button></button>'+'<br>')
+
+
+          //  }
+
+          // break stops the loops to condition point
+
+
+
+          /* 12.  functions */ 
+
+
+          // How to use function
+
+          // function oneTwoNumbers(){
+
+          //      let num1=30;
+          //      let num2=20;
+          //      let num3=num1+num2;
+          //      document.write(num3+"<br>")
+          // }
+          // //calling a function
+          // oneTwoNumbers();
+          // oneTwoNumbers();
+          // oneTwoNumbers();
+          // oneTwoNumbers();
+
+
+          // How to pass parameter on function
+
+          // function oneTwoNumbers(num1,num2){
+          //      document.write(num1+num2+"<br>");
+          // }
+
+          // oneTwoNumbers(2,3);
+          // oneTwoNumbers(20,30);
+          // oneTwoNumbers(10,10);
+
+
+          //Return function
+
+
+          // function equation(num1,num2){
+          //      return num1*num2;
+          // }
+          // console.log(equation(2,3));
+          // console.log(equation(6,3));
+
+
+          /* 13. object  */
+
+          // let myComputer={
+          //      name:"hp",
+          //      processor:"core i-5",
+          //      support:true,
+          //      screen:15.6,
+          //      ram:"8gb",
+          // }
+
+          // console.log(myComputer['processor']);
+          // console.log(myComputer.name);
+          // console.log(myComputer);
+
+
+          /* 14. Array */ 
+
+          // Array is a collection of same level variable
+
+          // const fruitList=['mango','pineapple','banana','blackberry'];
+
+          // console.log(fruitList);
+          // console.log(fruitList[0]);
+
+
+          //  How to use a for loop in Array
+
+          // const fruitLists=['mango','pineapple','banana','blackberry'];
+
+          // let i;
+          // for(i=0;i<fruitLists.length;i++){
+
+          //      console.log(fruitLists[i]+'<br>')
+
+
+
+          // }
+
+          // how to use for in loops in Array
+
+          // const fruitLists=['mango','pineapple','banana','blackberry'];
+
+          // for(let item in fruitLists){
+          //      console.log(fruitLists[item+"<br>"]);
+
+          // }
+
+
+          // how to use for in loops in object
+
+          // let person={
+          //      name:"milon",
+          //      age:23,
+          //      city:"Rangpur"
+          // }
+
+          // for(let info in person){
+
+          //      console.log(person.age)
+          //      console.log(person)
+          // }
+
+
+          /* 15. Different methods of Array */
+
+          // how to concat different types  of array
+
+          // let arr1=['a','b','c'];
+          // let arr2=['d','e','f'];
+          // let result=arr1.concat(arr2);
+          // console.log(result);
+
+          // how to change the formulation string to array
+
+          // let city="My hometown is Dinajpur";
+          // let cityArray=Array.from(city);
+          // console.log(cityArray[3]);
+
+
+          //Filter method
+
+          // filter method uses in array data searching
+
+          // let numbers=[10,20,30,35,40,45,50];
+
+          // let numArrayFilter=numbers.filter(function(num){
+
+          //      return num>30
+          // })
+          // console.log(numArrayFilter);
+
+          // Find method
+          // Find index
+          // find method uses for specific data searching 
+
+          // let num=[20,30,40,50,60,70,80];
+          // let findData=num.find(function(value){
+          //      return value <50
+          // })
+          // console.log(findData);
+
+          // let findIndex=num.findIndex(function(numb){
+          //      return numb>40;
+
+          // })
+          // console.log(findIndex);
+
+
+          // for each method 
+
+          // foreach works like for loops It,s very helpful for array.
+
+          // let num1=[20,30,40,50,60,70,80];
+          // let forEach=num1.forEach(function(item){
+          //      console.log(item+"<br>");
+          // })
+
+          // includes method
+
+          // includes method uses for value exists or not. It returns boolean value.
+
+          // let num2=[20,30,40,50,60,70,80];
+
+          // let result=num2.includes(40);
+          // console.log(result);
+
+          // Index of method
+
+          // index of method also uses for value exists or not if exists then return the value of index no moreover when value are not exist then return -1.
+
+          // let num2=[20,30,40,50,60,70,80];
+
+          // let indexResult=num2.indexOf(40);
+          // console.log(indexResult);
+
+
+          // Reverse method
+
+          // Reverse method reverse the value of Array
+
+          // let numArr=[20,25,30,45,50,60,70,80];
+          // numArr.reverse();
+          // console.log(numArr);
+
+          // push method
+
+          // push method added a new value of Array.That value added last part of array
+          
+          // let numArr=[20,25,30,45,50,60,70,80];
+          // numArr.push(90,100);
+          // console.log(numArr);
+
+          // pop method
+
+          // pop method removes the last values of the array. pop and push are opposite.
+
+          // let numArr=[20,25,30,45,50,60,70,80];
+          // numArr.pop();
+          // console.log(numArr);
+
+
+          // sort method
+
+          // sort method contains the Array to ascending order that mean small two large.
+
+          // let sortMethod=[20,10,45,30,50,48,60];
+          // sortMethod.sort();
+          // console.log(sortMethod);
+
+          // ascending value reversing
+
+          // sortMethod.sort().reverse();
+          // console.log(sortMethod);
+
+          // slice method
+
+          // slice method cuts the value of array depend on parameter
+
+          // let sliceMethod=[20,10,45,30,50,48,60];
+
+          // let result=sliceMethod.slice(2,5);
+          // console.log(result);
+
+          // splice method
+           // splice method used for adding or removing the value from array.
+           
+           // arr.splice(index,removeItem,addItem)
+
+          //  let spliceMethod=[20,10,45,30,50,48,60];
+
+           // remove
+          //   spliceMethod.splice(1,1);
+          //   console.log(spliceMethod);
+
+          // add
+
+          // spliceMethod.splice(0,0,15);
+          // console.log(spliceMethod);
+
+          // Add-Remove
+
+          // spliceMethod.splice(3,1,48);
+
+          // console.log(spliceMethod);
+
+
+          /* 16. String methods */ 
+
+          // char Ar method
+
+          // charAt method tells the character of the string
+
+
+          // let country="Bangladesh";
+
+          // console.log(country.charAt("0"));
+
+          // concat method
+
+          // let country1="Bangladesh";
+          // let country2="china";
+          // console.log(country1.concat(country2));
+
+          // Index of method
+
+          // Index of method tells the index number of the string
+
+          // let country="Bangladesh";
+          // console.log(country.indexOf("a"));
+
+          // we saw country string have 2 "a" value . last value of index number "a" have formulation to last index of.
+
+          // last Index of method
+
+          // console.log(country.lastIndexOf("a"));
+
+
+          //  Replace method
+
+          // It is used to replace the string value
+
+          // let country="Bangladesh";
+         
+          // console.log( country.replace("desh","deshi"));
+
+          // substr method
+
+          // substr method used for cut the spacific value of the string..
+          // ai method er 1st parameter e koto theke value cut korte hobe seta bolte hbe. 2nd parameter sekhan theke koyta value cut korbo seta bolte hobe.
+
+          // let country="Bangladesh";
+
+          // console.log(country.substr(5,3))
+
+          // substr and substring works same but substring e koto number theke koto number value katbo seta bolte hobe..
+          
+
+          // let country="Bangladesh";
+
+          // console.log(country.substring(5,10));
+
+          // to lowercase method
+          // to uppercase method
+          // trim method remove the extra space from the string..
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+     
+
+
+
+     </script>
+</body>
+</html>
